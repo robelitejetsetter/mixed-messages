@@ -5,10 +5,14 @@ const finalPart = ["hahaha! Get it?", "isabell necessary riding on a bicycle?","
 function randomCode () {
     
 
-    const ranNum = Math.floor(Math.random()*firstPart.length);
-    const firstRandomPart = firstPart[ranNum];
+    const ranNum1 = Math.floor(Math.random()*firstPart.length);
+    const ranNum2 = Math.floor(Math.random()*secondPart.length);
+    const ranNum3 = Math.floor(Math.random()*finalPart.length);
+    const firstRandomPart = firstPart[ranNum1];
+    const secondRandomPart = secondPart[ranNum2];
+    const thirdRandomPart = finalPart[ranNum3];
 
-    console.log(firstRandomPart)
+    console.log(`here is your joke: ${firstRandomPart}, ${secondRandomPart} ..... ${thirdRandomPart}`)
 
 }
 
